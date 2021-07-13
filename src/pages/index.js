@@ -1,4 +1,6 @@
 import * as React from "react"
+import tw, { styled } from "twin.macro"
+import Layout from './../components/Layout'
 
 // styles
 const pageStyles = {
@@ -69,6 +71,7 @@ const badgeStyle = {
 // markup
 const IndexPage = () => {
   return (
+    <Layout>
     <main style={pageStyles}>
       <title>Electric Adriland</title>
       <h1 style={headingStyles}>
@@ -84,6 +87,7 @@ const IndexPage = () => {
         update in real-time.{" "}
       </p>
     </main>
+    </Layout>
   )
 }
 
