@@ -6,6 +6,7 @@ module.exports = {
   plugins: [
     "gatsby-plugin-gatsby-cloud",
     `gatsby-plugin-emotion`,
+    'gatsby-plugin-postcss',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

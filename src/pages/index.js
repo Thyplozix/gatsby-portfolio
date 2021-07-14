@@ -1,94 +1,29 @@
-import * as React from "react"
-import tw, { styled } from "twin.macro"
-import Layout from './../components/Layout'
+import React from "react";
+import Layout from "../components/layout";
+import icon from "../images/icon.png";
 
-// styles
-const pageStyles = {
-  color: "#232129",
-  padding: 96,
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
-const headingAccentStyles = {
-  color: "#663399",
-}
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
-const listStyles = {
-  marginBottom: 96,
-  paddingLeft: 0,
-}
-const listItemStyles = {
-  fontWeight: 300,
-  fontSize: 24,
-  maxWidth: 560,
-  marginBottom: 30,
-}
-
-const linkStyle = {
-  color: "#8954A8",
-  fontWeight: "bold",
-  fontSize: 16,
-  verticalAlign: "5%",
-}
-
-const descriptionStyle = {
-  color: "#232129",
-  fontSize: 14,
-  marginTop: 10,
-  marginBottom: 0,
-  lineHeight: 1.25,
-}
-
-const badgeStyle = {
-  color: "#fff",
-  backgroundColor: "#088413",
-  border: "1px solid #088413",
-  fontSize: 11,
-  fontWeight: "bold",
-  letterSpacing: 1,
-  borderRadius: 4,
-  padding: "4px 6px",
-  display: "inline-block",
-  position: "relative",
-  top: -2,
-  marginLeft: 10,
-  lineHeight: 1,
-}
-
-// markup
-const IndexPage = () => {
+function IndexPage() {
   return (
     <Layout>
-    <main style={pageStyles}>
-      <title>Electric Adriland</title>
-      <h1 style={headingStyles}>
-        Congratulations
-        <br />
-        <span style={headingAccentStyles}>— you just made a Gatsby site! </span>
-        <span role="img" aria-label="Party popper emojis">
-          🎉🎉🎉
-        </span>
-      </h1>
-      <p style={paragraphStyles}>
-        Edit <code style={codeStyles}>src/pages/index.js</code> to see this page
-        update in real-time.{" "}
-      </p>
-    </main>
+      <section className="text-center">
+        <h2 className="inline-block p-3 mb-4 text-2xl font-bold bg-yellow-400">
+          Hey there! Welcome to your first Gatsby site.
+        </h2>
+        <p className="leading-loose">
+          This is a barebones starter for Gatsby styled using{` `}
+          <a
+            className="font-bold text-gray-900 no-underline"
+            href="https://tailwindcss.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Tailwind CSS
+          </a>
+          , a utility-first CSS framework.
+        </p>
+      </section>
     </Layout>
-  )
+  );
 }
 
-export default IndexPage
+export default IndexPage;
