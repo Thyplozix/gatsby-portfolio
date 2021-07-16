@@ -7,10 +7,10 @@ function IndexPage() {
     <Layout>
       <section className="text-center">
         <h2 className="inline-block p-3 mb-4 text-2xl font-bold bg-yellow-400">
-          Oh my god is this actually working.
+          It liiiiives! 
         </h2>
         <p className="leading-loose">
-          This is an attempt to learn GatsbyJS with TailwindCSS integrations, among others. 
+          This is an attempt to learn GatsbyJS with TailwindCSS integration, among others. 
         </p>
       </section>
     </Layout>
